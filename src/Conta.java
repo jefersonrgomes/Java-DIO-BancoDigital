@@ -1,4 +1,3 @@
-
 public abstract class Conta implements IConta{
 
     /*** ATRIBUTOS ***/
@@ -41,11 +40,15 @@ public abstract class Conta implements IConta{
         if(saldo < valor)             System.out.println("Valor indisponivel para Saque!");
         else{
             System.out.println("Transferencia realizada com sucesso!");
-            System.out.println("Transferido valor de " + valor + " para conta " + contaDestino);
+            System.out.println("Transferido valor de R$:" + valor + " para conta: " + contaDestino);
             this.sacar(valor);
             contaDestino.depositar(valor);
-            System.out.println("Saldo atualizado para" + saldo);
+            System.out.println("Saldo atualizado para R$:" + saldo);
         }
     }
     /*** *** ***/
+
+    protected String getString(String tipodaconta) {
+        return "\n--- --- ---\n*** DADOS DA CONTA ***\n"  + tipodaconta + "\nAgencia: " + agencia + "\nConta Poupança: " + numeroConta + "\nSaldo Disponivel: " + saldo +  "\n--- --- ---\n";
+    }
 }

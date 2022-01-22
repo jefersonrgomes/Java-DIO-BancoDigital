@@ -1,6 +1,4 @@
-
 public class Cliente {
-
     /*** ATRIBUTOS ***/
     private String nome;
     private int Idade;
@@ -86,11 +84,11 @@ public class Cliente {
 
     /*** MÉTODOS ***/
     public String dadosCliente(){
-        return "nome: " + nome + "\nIdade: " + Idade + "\nCPF: " + CPF;
+        return "*** SEJA BEM VINDO AO DIO BANK ***\n\n*** DADOS DO CLIENTE DIO BANK ***\n" + "nome: " + nome + "\nIdade: " + Idade + "\nCPF: " + CPF;
     }
 
     public String dadosClienteConta(){
-    return "nome: " + nome + "\nIdade: " + Idade + "\nCPF: " + CPF + conta.imprimirExtrato();
+    return  "*** SEJA BEM VINDO AO DIO BANK ***\n\n*** DADOS DO CLIENTE ***\n"+"nome: " + nome + "\nIdade: " + Idade + "\nCPF: " + CPF + conta.imprimirExtrato();
 }
     /*** *** ***/
 }
