@@ -37,7 +37,7 @@ public abstract class Conta implements IConta{
 
     @Override
     public void transferir(double valor, Conta contaDestino) {
-        if(saldo < valor)             System.out.println("Valor indisponivel para Saque!");
+        if(saldo < valor) System.out.println("Valor indisponivel para Saque!");
         else{
             System.out.println("Transferencia realizada com sucesso!");
             System.out.println("Transferido valor de R$:" + valor + " para conta: " + contaDestino);
