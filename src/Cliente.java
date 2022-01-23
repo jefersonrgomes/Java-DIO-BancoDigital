@@ -3,23 +3,23 @@ public class Cliente {
     private String nome;
     private int Idade;
     private long CPF;
+    private String login;
+    private String password;
     private int TipoConta;
     private Conta conta;
-    //private byte ContaType;
-    /*** *** ***/
-
     /*** CONSTRUTORES ***/
-    public Cliente(){
+    public Cliente(){}
 
-    }
-
-    public Cliente(String nome, int Idade, long CPF){
+    public Cliente(String nome, int Idade, long CPF, String login, String password)
+    {
         this.nome = nome;
         this.Idade = Idade;
         this.CPF = CPF;
+        this.login = login;
+        this.password = password;
     }
 
-    public Cliente(String nome, int Idade, long CPF,  int tipoConta)
+    public Cliente(String nome, int Idade, long CPF, int tipoConta, String login, String password)
     {
         this.nome = nome;
         this.Idade = Idade;
@@ -27,10 +27,9 @@ public class Cliente {
         this.TipoConta = tipoConta;
         if(this.TipoConta == 1) this.conta = new ContaCorrente();
         else this.conta = new ContaPoupanca();
+        this.login = login;
+        this.password = password;
     }
-
-    /*** *** ***/
-
     /*** GETTERS AND SETTERS ***/
     public String getNome() {
         return nome;
@@ -38,6 +37,22 @@ public class Cliente {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public int getIdade() {
@@ -79,16 +94,13 @@ public class Cliente {
     public void setTipoConta(int tipoConta) {
         TipoConta = tipoConta;
     }
-
-    /*** *** ***/
-
     /*** MÉTODOS ***/
     public String dadosCliente(){
         return "*** SEJA BEM VINDO AO DIO BANK ***\n\n*** DADOS DO CLIENTE DIO BANK ***\n" + "nome: " + nome + "\nIdade: " + Idade + "\nCPF: " + CPF;
     }
 
     public String dadosClienteConta(){
-    return  "*** SEJA BEM VINDO AO DIO BANK ***\n\n*** DADOS DO CLIENTE ***\n"+"nome: " + nome + "\nIdade: " + Idade + "\nCPF: " + CPF + conta.imprimirExtrato();
-}
-    /*** *** ***/
+    return  "*** SEJA BEM VINDO AO DIO BANK ***\n\n*** DADOS DO CLIENTE ***\n"+"nome: " + nome + "\nIdade: " + Idade + "\nCPF: " + CPF + getConta().saldo ;
+    }
+
 }
