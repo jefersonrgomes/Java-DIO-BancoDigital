@@ -4,6 +4,8 @@
 
 ## Sobre
 
+<img align="right" alt="Netflix Clone Interface" width="50%" src="https://user-images.githubusercontent.com/10172471/150661444-6aceee25-0f52-47e7-a001-7e47879748f1.png">
+
 ![image](https://user-images.githubusercontent.com/10172471/150658598-e1381c8d-520a-484c-b0ae-21bbae22d438.png)
 
 ### Este projeto foi desenvolvido com base nos conhecimentos adquiridos nos Bootcamps Java da Digital Innovation One.
