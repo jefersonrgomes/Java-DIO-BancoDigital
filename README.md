@@ -4,7 +4,23 @@
 
 ## Sobre
 
-<img align="center" alt="Netflix Clone Interface" width="100%" src="https://user-images.githubusercontent.com/10172471/150661444-6aceee25-0f52-47e7-a001-7e47879748f1.png">
+### Clientes cadastrados para teste operacional.
+![image](https://user-images.githubusercontent.com/10172471/150823646-c61b7b1a-9bcd-4885-a2e9-ffd3145efc71.png)
+
+Foram criadas duas instacias da classe Cliente, para serem utilizadas nos respectivos testes operacionais neste projeto.
+Esta em fase de desenvolvimento a ArrayList que ira receber novos Clientes cadastrados
+E tmbm a area de login para validar a entrada de agencia, conta e login e senha do cliente.
+Por hora só é possivel fazer testes com estes dois Clientes préviamente cadastrados e disponibilizados para os testes operacionais.
+
+### Tela de Apresentação
+
+<img align="center" alt="Netflix Clone Interface" width="50%" src="https://user-images.githubusercontent.com/10172471/150661444-6aceee25-0f52-47e7-a001-7e47879748f1.png">
+
+
+
+### Menu de Opções
+![image](https://user-images.githubusercontent.com/10172471/150823445-7bcbae79-88a4-4774-9fc1-c306e5414820.png)
+
 
 ![image](https://user-images.githubusercontent.com/10172471/150658598-e1381c8d-520a-484c-b0ae-21bbae22d438.png)
 
