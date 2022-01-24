@@ -1,7 +1,9 @@
+package Accounts;
+
 public enum ContaType {
 
-    CONTA_CORRENTE("Conta Corrente"),
-    CONTA_POUPANCA("Conta Poupança");
+    CONTA_CORRENTE("Accounts.Conta Corrente"),
+    CONTA_POUPANCA("Accounts.Conta Poupança");
 
 
     public String TipoConta ;

@@ -1,3 +1,5 @@
+package Accounts;
+
 public class Cliente {
     /*** ATRIBUTOS ***/
     private String nome;

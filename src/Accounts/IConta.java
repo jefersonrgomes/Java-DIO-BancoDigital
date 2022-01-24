@@ -1,3 +1,7 @@
+package Accounts;
+
+import Accounts.Conta;
+
 public interface IConta {
 
     /*** METODOS ***/
@@ -5,7 +9,7 @@ public interface IConta {
 
      void depositar(double valor);
 
-     //void transferir(double valor, Conta contaDestino);
+     //void transferir(double valor, Accounts.Conta contaDestino);
 
      void transferir(double valor, Conta clienteContaDestino, String titularContaDestino);
 
