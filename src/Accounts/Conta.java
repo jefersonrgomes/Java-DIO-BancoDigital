@@ -9,7 +9,7 @@ public abstract class Conta implements IConta {
     private static int SEQUENCIAL = 000001;
     protected int agencia;
     protected int numeroConta;
-    protected double saldo = 0.0;
+    protected double saldo;
 
     /*** CONSTRUTOR ***/
     public Conta() {
@@ -42,8 +42,8 @@ public abstract class Conta implements IConta {
         else {
             saldo += valor;
             System.out.println("Deposito realizado com sucesso" +
-                    "\nvalor do Deposito: " + valor +
-                    "\nSaldo atual: " + saldo + "\n\n");
+                               "\nvalor do Deposito: " + valor +
+                               "\nSaldo atual: " + saldo + "\n\n");
             initoptions.options();
         }
     }
@@ -56,14 +56,14 @@ public abstract class Conta implements IConta {
                 if (saldo >= valor) {
                     saldo -= valor;
                     System.out.println("Saque realizado com sucesso" +
-                            "\nvalor do saque: " + valor +
-                            "\nSaldo atual: " + saldo);
+                                       "\nvalor do saque: " + valor +
+                                       "\nSaldo atual: " + saldo);
                     initoptions.options();
                     checker = false;
                 } else if (saldo < valor) {
                     System.out.println("Valor indisponivel para Saque!");
                     System.out.println("Para saques informe um valor igual ou menor ao do seu saldo atual\n" +
-                            "Saldo Atual RS:" + saldo + "\n\n");
+                                       "Saldo Atual RS:" + saldo + "\n\n");
                     initoptions.options();
                 }
             } catch (NumberFormatException e) {

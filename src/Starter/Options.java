@@ -1,29 +1,25 @@
 package Starter;
-
 import Accounts.Cliente;
-import com.sun.tools.javac.Main;
-
 import java.util.Scanner;
 
 public class Options {
+    Cliente Julio = new Cliente(
+            "Julio Batist",
+            32,
+            32445647885L,
+            1,
+            "julio.batist",
+            "Mudar123");
 
+    Cliente Renan = new Cliente(
+            "Renan Santos Maia",
+            45,
+            45678912365L,
+            2,
+            "renan.maia",
+            "Mudar123");
 
     public void options() {
-        Cliente Julio = new Cliente(
-                "Julio Batist",
-                32,
-                32445647885L,
-                1,
-                "julio.batist",
-                "Mudar123");
-
-        Cliente Renan = new Cliente(
-                "Renan Santos Maia",
-                45,
-                45678912365L,
-                2,
-                "renan.maia",
-                "Mudar123");
 
 
 
@@ -34,7 +30,7 @@ public class Options {
         System.out.println(
                 "*********************************************************\n" +
                 "***  WELLCOME TO DIO BANK | #MAKE THE CHANGE!         ***\n" +
-                "*********************************************************\n"+
+                "*********************************************************\n" +
                 "BEM VINDO SR. " + Julio.getNome() + " | AG: " + Julio.getConta().getAgencia() + " | CONTA: " + Julio.getConta().getNumeroConta() +
                 "\n***** SELECIONE UMA OPERAÇÃO *****\n\n" +
                 "1 - CONSULTAR DIO-CONTA\n" +
@@ -65,8 +61,8 @@ public class Options {
                 System.out.println("***** DIO BANK - SACAR *****");
                 System.out.println("Voce escolheu a opção 3 SACAR");
                 System.out.println("!!! IMPORTANTE !!!" +
-                        "Para realizar saque, informe um valor Igual ou Menor ao seu valor de Saldo Atual" +
-                        "Seu Saldo Atual é de R$: " + Julio.getConta().getSaldo());
+                                   "Para realizar saque, informe um valor Igual ou Menor ao seu valor de Saldo Atual" +
+                                   "Seu Saldo Atual é de R$: " + Julio.getConta().getSaldo());
 
                 System.out.println("Digite o valor do saque\n");
                 valor = Integer.parseInt(ler.next());
@@ -82,6 +78,7 @@ public class Options {
                 options();
 
             }
+
             case "5" -> {
                 System.out.println("***** DIO BANK - TRANSFERENCIA *****");
 
@@ -89,7 +86,6 @@ public class Options {
                 options();
 
             }
-
 
             case "6" -> {
                 System.out.println("***** DIO BANK - SAIR *****");
