@@ -13,6 +13,8 @@ Recursos utilizados no projeto:
 - [ ] Tratamento de erros com Try Cath 🔨
 - [ ] Listas dinamicas com List 🔨
 
+#
+
 ### Clientes cadastrados para teste operacional.
 ![image](https://user-images.githubusercontent.com/10172471/150823646-c61b7b1a-9bcd-4885-a2e9-ffd3145efc71.png)
 
