@@ -41,4 +41,4 @@ Para realizar testes no projeto, favor utilizar estritamente os tipos de dados r
 
 ![image](https://user-images.githubusercontent.com/10172471/150658575-4441bf27-c530-4810-a836-3c90d2eadd7a.png)
 
-### Por Jeferson Ribeiro Gomes = { jrgDev : https://jrgdev.vercel.app/ }
+### Realizado por [Jeferson Ribeiro Gomes](https://jrgdev.vercel.app/).
