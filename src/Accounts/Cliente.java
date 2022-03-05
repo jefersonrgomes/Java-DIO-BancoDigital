@@ -12,9 +12,9 @@ public class Cliente {
     /*** CONSTRUTORES ***/
     public Cliente(){}
 
-    public Cliente(String nome, int Idade, long CPF, String login, String password)
+    public Cliente(String name, int Idade, long CPF, String login, String password)
     {
-        this.nome = nome;
+        this.nome = name;
         this.Idade = Idade;
         this.CPF = CPF;
         this.login = login;
